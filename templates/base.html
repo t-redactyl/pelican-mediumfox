@@ -96,6 +96,9 @@
     </script>
     <script src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_HTML" type="text/javascript"></script>
     {% endif %}
+    {% if GOOGLE_ANALYTICS %}
+    {% include 'analytics.html' %}
+    {% endif %}
     {% endblock foot_js %}
   </body>
 </html>
